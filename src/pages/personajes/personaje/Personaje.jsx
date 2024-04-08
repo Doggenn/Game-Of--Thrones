@@ -62,7 +62,7 @@ export default function Personaje({ t }) {
       {character && <div>
 
         <div className='character-img'>
-          <img src={"/public" + character.image} alt={character.name} />
+          <img src={character.image} alt={character.name} />
         </div>
         <h2>{character.name}</h2>
         <h3>{t('House')}: {character.house}</h3>
