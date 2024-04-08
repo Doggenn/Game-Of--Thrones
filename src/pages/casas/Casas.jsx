@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 import './casas.css'
 
 
-export default function Casas() {
+export default function Casas({t}) {
   const [houses, setHouses] = useState()
   const [newHouses, setNewHouses] = useState([]);
   const getHouses = () => {
@@ -34,7 +34,7 @@ export default function Casas() {
   return (
 
     <>
-      <input type='text' onChange={(e) => filtrado(e)} className='form-data' />
+      <input type='text' placeholder={t("Buscar casa")} onChange={(e) => filtrado(e)} className='form-data' />
 
       <div>{houses &&
         <div className="casas">

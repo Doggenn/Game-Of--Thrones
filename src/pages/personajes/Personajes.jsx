@@ -33,7 +33,7 @@ export default function Personajes({ t }) {
   }
   return (
     <>
-      <input type='text' onChange={(e) => filtrado(e)} className='form-data' />
+      <input type='text' placeholder={t('Buscar personaje')} onChange={(e) => filtrado(e)} className='form-data' />
       <div className='characters'>
         {newCharacters.length === 0 ?
           characters.map((character, index) => (

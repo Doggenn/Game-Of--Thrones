@@ -36,3 +36,9 @@
     object-fit: cover;
     position: absolute;
 }
+
+.form-data{
+    margin-top: 10px;
+    margin-left: 100px;
+    border-radius: 5px;
+}
