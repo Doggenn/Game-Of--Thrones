@@ -62,7 +62,7 @@ export default function Cronologia() {
 
             {characters.map((character, index) =>
               character.age && index % 2 === 0 &&
-              <Link to={"/personajes/"+character.id} key={index}>
+              <Link key={index} to={"/personajes/"+character.id}>
               <div className='character-age'>
                 <p className='pm-0'>{character.age}</p>
                 <h2>{character.name}</h2>
@@ -77,13 +77,15 @@ export default function Cronologia() {
 
           <div className='b-impares'>
             {characters.map((character, index) => character.age && index % 2 !== 0 &&
-              <div className='character-age' key={index}>
-                <p className='pm-0'>{character.age}</p>
-                <h2>{character.name}</h2>
-                <div className='character-age_img'>
-                  <img src={character.image}></img>
-                </div>
-              </div>
+                <Link key={index} to={"/personajes/"+character.id}>
+                  <div className='character-age' >
+                    <p className='pm-0'>{character.age}</p>
+                    <h2>{character.name}</h2>
+                    <div className='character-age_img'>
+                      <img src={character.image}></img>
+                      </div>
+                  </div>
+                </Link>
 
 
             )}
