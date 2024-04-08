@@ -1,7 +1,7 @@
 .body {
 
     width: 1536px;
-    background-image: url(public/game-of-thrones-poster.jpg);
+    background-image: url(game-of-thrones-poster.jpg);
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
