@@ -22,9 +22,9 @@ function App() {
 
 
         <header className='header'>
-          <Languages></Languages>
 
           <nav className='nav'>
+          <Languages></Languages>
             <Link className='a' to="/">{t('Home')}</Link>
             <Link className='a' to="/personajes">{t('Characters')}</Link>
             <Link className='a' to="/casas">{t('Houses')}</Link>

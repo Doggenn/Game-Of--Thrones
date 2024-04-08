@@ -11,7 +11,7 @@ export default function Languages() {
   }
 
   return (
-    <div>
+    <div className='botones'>
        <button onClick={() => cambiarIdioma('en')}>{t('EN')}</button>
       <button onClick={() => cambiarIdioma('es')}>{t('ES')}</button>
       

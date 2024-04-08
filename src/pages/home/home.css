@@ -1,6 +1,6 @@
 
 .body {
-    width: 1536px;
+    width: 100vw;
     background-image: url(/images/game-of-thrones-poster.jpg);
     height: 100vh;
     background-size: cover;
