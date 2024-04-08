@@ -16,7 +16,7 @@ export default function Personajes({ t }) {
   }, []);
 
   const getCharacters = () => {
-    axios.get('http://localhost:3000/characters/')
+    axios.get('https://game-of-thrones-json-server-one.vercel.app/characters/')
       .then(data => setCharacters(data.data));
   }
 

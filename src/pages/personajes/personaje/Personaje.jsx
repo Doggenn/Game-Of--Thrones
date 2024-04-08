@@ -9,7 +9,7 @@ export default function Personaje({ t }) {
   const [character, setCharacter] = useState()
   const { id } = useParams();
   const getCharacter = () => {
-    axios.get('http://localhost:3000/characters/' + id)
+    axios.get('https://game-of-thrones-json-server-one.vercel.app/characters/' + id)
       .then(data => setCharacter(data.data))
 
   }

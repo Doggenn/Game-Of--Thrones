@@ -9,7 +9,7 @@ export default function Casa({t}) {
     const [house, setHouse] = useState()
     const { id } = useParams();
     const getHouse = () => {
-        axios.get('http://localhost:3000/houses/'+ id)
+        axios.get('https://game-of-thrones-json-server-one.vercel.app/houses/'+ id)
           .then(data => setHouse(data.data))   
     }
     

@@ -1,7 +1,7 @@
 import axios from "axios"
-import React, { useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-export const housesGlobal = React.createContext()
+
 import './casas.css'
 
 
@@ -9,7 +9,7 @@ export default function Casas() {
   const [houses, setHouses] = useState()
   const [newHouses, setNewHouses] = useState([]);
   const getHouses = () => {
-    axios.get('http://localhost:3000/houses')
+    axios.get('https://game-of-thrones-json-server-one.vercel.app/houses')
       .then(data => setHouses(data.data))
   }
 
@@ -19,10 +19,6 @@ export default function Casas() {
 
   }, [])
 
-  // const filtrado = (evento) => {
-  //     const nombre = evento.target.value
-  //     getHouses(nombre)
-  //   }
   const filtrado = (evento) => {
     const valorInput = evento.target.value.toLowerCase();
     filtradoCasas(valorInput);
