@@ -31,36 +31,13 @@ export default function Personajes({ t }) {
     );
     setNewCharacters(filteredCharacters);
   }
-  //
-  //  const filtradoPersonajes = (valor) => {
-  //   // const data2 = characters.filter(characters => characters.name.toLowerCase() == valor.toLowerCase())
-  //      characters.name.toLowerCase().includes(valor).toLowerCase()
-
-
-  //   setNewCharacters(data)
-
-
-
-
-  // }
-  // if (valor === undefined) {
-  // // console.log(valor)
-  // // const data2 = characters.filter(characters => characters.name == valor)
-  //   // setNewCharacters(data2)
-  //   setNewCharacters([...characters])
-
-  // // console.log(data2)
-  //   console.log(newCharacters)
-  // } else {
-  //   const data2 = characters.filter(characters => characters.name == valor)
-  //   setNewCharacters(data2)
   return (
     <>
       <input type='text' onChange={(e) => filtrado(e)} className='form-data' />
       <div className='characters'>
         {newCharacters.length === 0 ?
           characters.map((character, index) => (
-            <Link to={character.id} key={index}>
+            <Link to={"/personajes/"+character.id} key={index}>
               <div className='character'>
                 <div className='character-img'>
                   <img src={character.image} alt={character.name} />
@@ -73,7 +50,7 @@ export default function Personajes({ t }) {
             </Link>
           )) :
           newCharacters.map((character, index) => (
-            <Link to={character.id} key={index}>
+            <Link to={"/personajes/"+character.id} key={index}>
               <div className='character'>
                 <div className='character-img'>
                   <img src={character.image} alt={character.name} />

@@ -39,7 +39,7 @@ export default function Casas() {
       <div>{houses &&
         <div className="casas">
           {newHouses.length === 0 ?
-            houses.map((house, index) => <Link key={index} to={house.id}>
+            houses.map((house, index) => <Link key={index} to={"/casas/"+house.id}>
               <div className="casa">
                 <div className="casa-img">
                   <img src={house.image} alt={house.name} />
