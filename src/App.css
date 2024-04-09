@@ -53,19 +53,19 @@
 
 .header{
   display: flex;
-  width: 100vh;
   font-family: GameOfThrones;
+  justify-content: center;
 }
 .nav{
   display: flex;
-  z-index: 1000;
-  color:white;
+  color: white;
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 80%;
   padding: 10px 0;
   text-align: center;
-  justify-content: space-evenly;
-  
+  justify-content: space-around;
+  z-index: 1000;
+
   
 }

@@ -1,5 +1,5 @@
-
 .body {
+
     width: 100vw;
     background-image: url(/images/game-of-thrones-poster.jpg);
     height: 100vh;
@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .titular {

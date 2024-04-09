@@ -2,6 +2,7 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
 import './casa.css'
+import Languages from "../../../components/Languages";
 
 
 
@@ -21,6 +22,7 @@ export default function Casa({t}) {
   return (
     
     <>
+      <Languages></Languages>
           {house && <div className="casa-container">
               {console.log(house)}
               <div className="info-container">
@@ -31,27 +33,27 @@ export default function Casa({t}) {
               </div>
               <div className="textos">
                   <div className="texto">
-                      <h3>{t('SEDE')}</h3>
+                      <h3>{t('House')}</h3>
                       <p>{house.settlement}</p>
                   </div>
                   <div className="texto">
-                    <h3>{t('REGION')}</h3>
+                    <h3>{t('Region')}</h3>
                     <p>{house.region}</p>
                   </div>
                   <div className="texto">
-                    <h3>{t('ALIANZAS')}</h3>
+                    <h3>{t('Alliances')}</h3>
                       {house.alliances.map((alliance, i) =>
                           <p key={i}>{alliance} </p>
                       )}
                   </div>
                   <div className="texto">
-                    <h3>{t('RELIGION')}</h3>
+                    <h3>{t('Religion')}</h3>
                     {house.religions.map((religion, i) =>
                           <p key={i}>{religion} </p>
                       )}
                   </div>
                   <div className="texto">
-                      <h3>{t('FUNDACION')}</h3>
+                      <h3>{t('Foundation')}</h3>
                     <p>{house.foundation}</p>
                   </div>
                   <div>

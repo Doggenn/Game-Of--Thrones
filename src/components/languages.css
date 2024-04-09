@@ -1,3 +1,21 @@
-.bontones{
-    align-items: top;
+.idioma-es {
+    margin: 10px;
+    font-family: Game Of Thrones;
+    position: absolute;
+    top: 10px;
+    right: 63px;
+    z-index: 1;
+    border: none;
+    width: 66px;
+}
+
+.idioma-en {
+    margin: 10px;
+    font-family: Game Of Thrones;
+    position: absolute;
+    top: 10px;
+    right: 138px;
+    z-index: 1;
+    border: none;
+    width: 66px;
 }

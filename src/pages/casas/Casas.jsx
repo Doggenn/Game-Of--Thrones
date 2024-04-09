@@ -1,11 +1,12 @@
 import axios from "axios"
-import { useEffect, useState } from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-
+export const housesGlobal = React.createContext()
 import './casas.css'
+import Languages from "../../components/Languages"
 
 
-export default function Casas({t}) {
+export default function Casas({ t }) {
   const [houses, setHouses] = useState()
   const [newHouses, setNewHouses] = useState([]);
   const getHouses = () => {
@@ -19,6 +20,10 @@ export default function Casas({t}) {
 
   }, [])
 
+  // const filtrado = (evento) => {
+  //     const nombre = evento.target.value
+  //     getHouses(nombre)
+  //   }
   const filtrado = (evento) => {
     const valorInput = evento.target.value.toLowerCase();
     filtradoCasas(valorInput);
@@ -34,12 +39,15 @@ export default function Casas({t}) {
   return (
 
     <>
-      <input type='text' placeholder={t("Buscar casa")} onChange={(e) => filtrado(e)} className='form-data' />
+      <Languages></Languages>
+      <div className='filtro'>
+      <img className='search' src= "search_FILL0_wght400_GRAD0_opsz24.svg"></img>
+      <input type='text' onChange={(e) => filtrado(e)} className='form-data' placeholder={t('Search House')} /></div>
 
       <div>{houses &&
         <div className="casas">
           {newHouses.length === 0 ?
-            houses.map((house, index) => <Link key={index} to={"/casas/"+house.id}>
+            houses.map((house, index) => <Link to={"/casas/" + house.id } key={index}>
               <div className="casa">
                 <div className="casa-img">
                   <img src={house.image} alt={house.name} />
@@ -49,13 +57,13 @@ export default function Casas({t}) {
 
               </div></Link>
             ) :
-            newHouses.map((house, index) => <Link key={index} to={house.id}>
-              <div>
-                <div>
+            newHouses.map((house, index) => <Link to={"/casas/" + house.id } key={index}>
+              <div className="search-casa">
+                <div className="search-casa_img">
                   <img src={house.image} alt={house.name} />
                 </div>
                 <h2>{house.name}</h2>
-                <p></p>
+                
 
               </div></Link>
             )}

@@ -3,13 +3,19 @@
   "Home": "Home", 
   "Characters": "Personajes",
   "Houses": "Casas",
-  "Chronology": "Cronología",
+  "Chronology": "Cronologia",
   "House": "Casa",
   "Parents": "Padres",
   "Siblings": "Descendientes",
   "Episodes": "Episodios",
   "Alliances": "Alianzas",
   "Titles": "Titulos",
-  "Buscar casa": "Buscar casa",
-  "Buscar personaje": "Buscar personaje"
+  "Search Character":  "Buscar personaje",
+  "Search House": "Buscar casa",
+  "Foundation": "Fundacion",
+  "Religion": "Religion",
+  "Region": "Region"
+
+
+ 
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import './filtro.css'
 export default function Filtro({personajes, setCharacters}) {
     const [data, setData] = useState()
     console.log(data)
@@ -10,10 +10,13 @@ export default function Filtro({personajes, setCharacters}) {
     }
 
   return (
-    <div>
-    <input type='text' onChange={(e) => filtrado(e)} className='form-data'></input>
+    <>
+    <div className='filtro'>
+    <input type='text' onChange={(e) => filtrado(e)}></input>
 
       
     </div>
+    
+    </>
   )
 }

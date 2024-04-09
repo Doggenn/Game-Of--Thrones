@@ -10,6 +10,10 @@
   "Episodes": "Episodes",
   "Alliances": "Alliances",
   "Titles": "Titles",
-  "Buscar casa": "Search house",
-  "Buscar personaje": "Search Character"
+  "Search Character":"Search Character",
+  "Search House": "Search House",
+  "Foundation": "Foundation",
+  "Religion": "Religion",
+  "Region": "Region"
+  
 }

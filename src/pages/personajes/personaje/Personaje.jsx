@@ -1,6 +1,9 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
+import './personaje.css'
+import Languages from "../../../components/Languages";
+
 
 
 
@@ -57,45 +60,61 @@ export default function Personaje({ t }) {
 
   return (
     <>
-
-
-      {character && <div>
+  
+      <Languages></Languages>
+      {character && <div className="character-main">
 
         <div className='character-img'>
-          <img src={character.image} alt={character.name} />
+          <img src={"/public" + character.image} alt={character.name} />
         </div>
         <h2>{character.name}</h2>
-        <h3>{t('House')}: {character.house}</h3>
-        <img src={pintarCasa(character.house)} alt="" />
-        <h3>{t('Alliances')}:</h3>
-        <ul>
-          {character.alliances}
-        </ul>
-        <h3>{t('Episodes')}:</h3>
-        <ul>
+        <div className="character-info">
+        <div className="info-texto">
+            <h3>{character.house}</h3>
+            <div className="info-texto_img">
+            <img src={pintarCasa(character.house)} alt="" /></div>
+          </div>
+        <div className="info-texto">
+        <h3>{t('Alliances')}</h3>
+            <nav>
+           {character.alliances.map((alliance, episodeAlliance) => (
+             <li key={episodeAlliance}>{alliance}</li>
+              ))}
+            </nav>
+          </div>
+        <div className="info-texto">
+        <h3>{t('Episodes')}</h3>
+        <nav>
           {character.episodes.map((episode, episodeIndex) => (
             <li key={episodeIndex}>{episode}</li>
           ))}
-        </ul>
-        {console.log(character.episodes)}
-        <h3>{t('Parents')}:</h3>
-        <ul>
+        </nav></div>
+          {console.log(character.episodes)}
+        <div className="info-texto">
+        <h3>{t('Parents')}</h3>
+        <nav>
           {character.parents.map((parent, parentIndex) => (
             <li key={parentIndex}>{parent}</li>
           ))}
-        </ul>
-        <h3>{t('Siblings')}:</h3>
-        <ul>
+            </nav>
+        </div>
+        <div className="info-texto">
+        <h3>{t('Siblings')}</h3>
+        <nav>
           {character.siblings.map((sibling, siblingIndex) => (
             <li key={siblingIndex}>{sibling}</li>
           ))}
-        </ul>
-        <h3>{t('Titles')}:</h3>
-        <ul>
+            </nav>
+          </div>
+        <div className="info-texto">
+        <h3>{t('Titles')}</h3>
+        <nav>
           {character.titles.map((title, titleIndex) => (
             <li key={titleIndex}>{title}</li>
           ))}
-        </ul>
+            </nav>
+        </div>
+        </div>
       </div>}
 
     </>

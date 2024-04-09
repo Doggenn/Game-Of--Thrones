@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import './cronologia.css'
+import Languages from '../../components/Languages'
 import { Link } from 'react-router-dom'
 
 
@@ -11,7 +12,6 @@ export default function Cronologia() {
 
   const getCharacters = () => {
     axios.get('https://game-of-thrones-json-server-one.vercel.app/characters/')
-      // .then(res => res.json())
       .then(data => setCharacters(data.data))
   }
 
@@ -51,6 +51,7 @@ export default function Cronologia() {
 
   return (
     <>
+      <Languages></Languages>
       <div className='b-cronologia__container'>
 
         <button className='b-btn--cronologia' type='text' onClick={handleClick}>{edad ? edad : 0}</button>
@@ -59,8 +60,7 @@ export default function Cronologia() {
 
           <div className='b-pares'>
 
-
-            {characters.map((character, index) =>
+        {characters.map((character, index) =>
               character.age && index % 2 === 0 &&
               <Link key={index} to={"/personajes/"+character.id}>
               <div className='character-age'>
@@ -93,7 +93,9 @@ export default function Cronologia() {
           </div>
         </div>
 
-      </div>
+      </div> 
+           
+
 
     </>
 
