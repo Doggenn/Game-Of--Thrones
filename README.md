@@ -1,11 +1,22 @@
 # 📌 Game of Thrones - React + Vite  
-Aplicación interactiva sobre Juego de Tronos desarrollada con **React y Vite**.  
+Aplicación interactiva sobre Juego de Tronos desarrollada con **React y Vite**.
+## 📦 Base de datos (JSON Server)
+Este proyecto utiliza un servidor JSON como base de datos.  
+Puedes encontrar el código fuente en el siguiente repositorio:  
+🔗 **[BBDD](https://github.com/Doggenn/Game-Of--Thrones-Json-Server)**
 
 ## 🚀 Tecnologías utilizadas:
 - React.js + Vite  
 - Styled Components  
 - API de Juego de Tronos  
 - React Router  
+
+```bash
+git clone https://github.com/Doggenn/Game-Of--Thrones.git
+cd Game-Of--Thrones
+npm install
+npm start
+```
 
 ## 📷 Capturas de pantalla:
 ![Screenshot](https://i.imgur.com/BgGgGhb.png)  
@@ -14,15 +25,10 @@ Aplicación interactiva sobre Juego de Tronos desarrollada con **React y Vite**.
 ![Screenshot](https://imgur.com/4LubBpM.png)
 ![Screenshot](https://imgur.com/L2yVuTz.png)
 ## 📥 Instalación y uso:
-```bash
-git clone https://github.com/Doggenn/Game-Of--Thrones.git
-cd Game-Of--Thrones
-npm install
-npm start
-```
+
 <!--
 https://github.com/Doggenn/Game-Of--Thrones.git
--->
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -31,3 +37,4 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-->
