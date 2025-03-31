@@ -9,14 +9,17 @@ Aplicación interactiva sobre Juego de Tronos desarrollada con **React y Vite**.
 
 ## 📷 Capturas de pantalla:
 ![Screenshot](https://i.imgur.com/BgGgGhb.png)  
-
+![Screenshot](https://imgur.com/QIQpnW0.png)
+![Screenshot](https://imgur.com/IObjXo6.png)
+![Screenshot](https://imgur.com/4LubBpM.png)
+![Screenshot](https://imgur.com/L2yVuTz.png)
 ## 📥 Instalación y uso:
 ```bash
 git clone https://github.com/Doggenn/Game-Of--Thrones.git
 cd nombre-del-repo
 npm install
 npm start
-
+```
 <!--
 https://github.com/Doggenn/Game-Of--Thrones.git
 -->
