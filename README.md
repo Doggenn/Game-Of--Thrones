@@ -1,3 +1,25 @@
+# 📌 Game of Thrones - React + Vite  
+Aplicación interactiva sobre Juego de Tronos desarrollada con **React y Vite**.  
+
+## 🚀 Tecnologías utilizadas:
+- React.js + Vite  
+- Styled Components  
+- API de Juego de Tronos  
+- React Router  
+
+## 📷 Capturas de pantalla:
+![Screenshot](https://imgur.com/a/DIYfEKL)  
+
+## 📥 Instalación y uso:
+```bash
+git clone https://github.com/Doggenn/Game-Of--Thrones.git
+cd nombre-del-repo
+npm install
+npm start
+
+<!--
+https://github.com/Doggenn/Game-Of--Thrones.git
+-->
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
