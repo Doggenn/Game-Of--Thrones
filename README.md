@@ -8,7 +8,7 @@ Aplicación interactiva sobre Juego de Tronos desarrollada con **React y Vite**.
 - React Router  
 
 ## 📷 Capturas de pantalla:
-![Screenshot](https://imgur.com/a/DIYfEKL)  
+![Screenshot](https://imgur.com/BgGgGhb)  
 
 ## 📥 Instalación y uso:
 ```bash
