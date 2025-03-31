@@ -4,6 +4,7 @@ Aplicación interactiva sobre Juego de Tronos desarrollada con **React y Vite**.
 Este proyecto utiliza un servidor JSON como base de datos.  
 Puedes encontrar el código fuente en el siguiente repositorio:  
 🔗 **[Repositorio de la Base de Datos](https://github.com/Doggenn/Game-Of--Thrones-Json-Server)**
+
 🔹 **💡 Nota:** No es necesario instalar el repositorio de la base de datos, ya que también está alojado en Vercel.  
 🔗 **API pública en Vercel:** [https://game-of-thrones-json-server-one.vercel.app](https://game-of-thrones-json-server-one.vercel.app)  
 
