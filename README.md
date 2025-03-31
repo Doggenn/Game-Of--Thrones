@@ -17,6 +17,8 @@ Puedes encontrar el código fuente en el siguiente repositorio:
 - API de Juego de Tronos  
 - React Router  
 
+
+## 📥 Instalación y uso:
 ```bash
 git clone https://github.com/Doggenn/Game-Of--Thrones.git
 cd Game-Of--Thrones
@@ -30,7 +32,6 @@ npm start
 ![Screenshot](https://imgur.com/IObjXo6.png)
 ![Screenshot](https://imgur.com/4LubBpM.png)
 ![Screenshot](https://imgur.com/L2yVuTz.png)
-## 📥 Instalación y uso:
 
 <!--
 https://github.com/Doggenn/Game-Of--Thrones.git
